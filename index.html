@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAMMA</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            text-decoration: none;
+            list-style: none;
+            box-sizing: border-box;
+        }
+
+        body{
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            background-color: rgb(255, 255, 255);
+            color: rgb(7, 0, 0);
+        }
+
+        nav{
+            background: rgb(0, 0, 0);
+            height: 80px;
+            width: 100%;
+        }
+
+        #logo{
+            color: rgb(255, 166, 0);
+            height: 70px;
+            width: 250px;
+            line-height: 80px;
+            padding: 0 10px;
+        }
+
+        nav ul{
+            float: right;
+            margin-right: 20px;
+        }
+
+        nav ul li{
+            display: inline-block;
+            line-height: 80px;
+            margin: 0 5px;
+        }
+
+        nav ul li a{
+            color: white;
+            font-size: 17px;
+            padding: 7px 13px;
+            border-radius: 4px;
+            text-transform: uppercase;
+        }
+
+        a.active, .asdf:hover{
+            background: rgb(255, 166, 0);
+            color: black;
+            transition: .3s;
+        }
+
+        #check{
+            display: none;
+        }
+
+        #checkbtn{
+                color: white; 
+                font-size: 30px; 
+                float: right; 
+                line-height: 80px; 
+                margin-right: 80px; 
+                cursor: pointer; 
+                display: none;
+        }
+
+        @media (max-width:952px){
+            .logo{
+                font-size: 30px;
+                padding-left: 50px;
+            }
+
+            nav ul li a{
+                font-size: 16px;
+            }
+        }
+        
+        @media(max-width: 858px){
+            #checkbtn{
+                display: block;
+            }
+
+            ul{
+                position: fixed;
+                width: 100%;
+                height: 100vh;
+                background: rgb(0, 0, 0);
+                top: 80px;
+                left: -100%;
+                text-align: center;
+                transition: all .5s;
+            }
+
+            nav ul li{
+                display: block;
+                margin: 50px 0;
+                line-height: 30px;
+            }
+
+            nav ul li a {
+                font-size: 20px;
+            }
+
+            .asdf:hover,a.active{
+                background: none;
+                color: rgb(255, 166, 90);
+            }
+
+            #check:checked ~ ul{
+                left: 0;
+
+            }
+        }
+
+        .Ipart{
+            background: #000a96;
+            height: 150vh;
+        }
+
+        h3{
+            font-size: 30px;
+            text-align: center;
+            color: rgb(247, 86, 113);
+            text-shadow:
+            -1px -1px 0 #000,
+            1px -1px 0 #000,
+            -1px 1px 0 #000,
+            1px 1px 0 #000;
+            font-weight: 100;
+        }
+
+        .IIpara{
+            background: lightgreen;
+            height: 110vh;
+            font-size: 25px;
+            color: #000a96;
+            font-weight: 700;
+        }
+
+        .IIpara{
+            text-align: justify;
+            background-color: lightgreen;
+        }
+
+        .bold{
+            color: rgb(255, 0, 43);
+            text-shadow:
+            -1px -1px 0 #ffffff,
+            1px -1px 0 #ffffff,
+            -1px 1px 0 #000,
+            1px 1px 0 #000;
+        }
+
+        .i{
+            width: 300px;
+            height: 450px;
+            border-radius: 20px;
+            margin: 1px auto;
+            display: block;
+            border: solid #000 5px;
+        }
+
+        .ii{
+            width: 250px;
+            height: 450px;
+            border-radius: 20px;
+            margin: 1px auto;
+            display: block;
+            border: solid #000 5px;
+        }
+
+        .pere{
+            text-align: center;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <nav>
+            <input type="checkbox" id="check">
+            <label for="check">
+                <span class="fa fa-bars" id="checkbtn" ></span>
+            </label>
+            <label class="logo"><img src="kiraning.png" alt="Kiran Arya" id="logo"></label>
+            <ul>
+                <li><a class="active" href="index.html" class="asdf">Home</a></li>
+                <li><a href="#" class="asdf">About</a></li>
+                <li><a href="#" class="asdf">What I Do</a></li>
+                <li><a href="#" class="asdf">Contact</a></li>
+                <li><a href="#" target="_blank" class="asdf">Know More...</a></li>
+            </ul>
+        </nav>
+        <div class="Ipart">
+            <h3 class="kavita"><br>
+                <br>
+                
+                आज मैंने जाना,<br>
+                जीवन का अर्थ ,<br>
+                बाकी सब है व्यर्थ ।<br>
+                सुनहरे सपने लेकर ,<br> 
+                आई थी एक परी ,<br><br>
+                
+                उसके मन में आशा थी भरी ।<br>
+                चाहा था उसने जो कुछ भी ,<br>
+                उससे कहीं ज्यादा ,<br>
+                जिन्दगी ने उसके झोली में भरी ।<br>
+                <br>
+                ~ Kiran Arya
+                <br>
+                <img src="me_and_my_monky.jpeg" alt="me and my monkey" class="i">                            
+            </h3>
+        </div>
+
+
+        <div class="IIpara">
+            <br><br><br>
+            <p class="para">मेरा नाम <span class="bold">किरन</span> आर्या है। आज मैं जो कुछ भी लिख पा रही हूँ, वो सब मेरे बेटे <span class="bold">आकाश</span> की वजह से संभव हो पा रहा है क्योंकि अब मेरे बेटे ने <span class="bold">FrontEnd Development</span> सीख ली है जिस वैबसाइट के द्वारा मैं यह सुनहरे शब्द लिख पा रही हूँ। आज मुझे बहुत गर्व हो रहा है अपने बेटे पर। आशा है  कि यह यात्रा उसे बहुत अच्छे मुकाम पर ले जाएगी। मेरी ख्वाहिश है वह दुनिया का नंबर 1 मुकाम हांसिल करे !!! </p>
+            <br>
+            <img src="me_and_my_lovely.jpeg" alt="me and my lovely" class="ii">
+            <p class="pere">~ मेरा आशीर्वाद और महादेव की छत्रछाया</p>
+            
+        </div>
+
+        <div class="IIIpara">
+            
+        </div>
+</body>
+</html>
